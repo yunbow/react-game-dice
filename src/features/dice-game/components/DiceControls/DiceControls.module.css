@@ -1,0 +1,15 @@
+.controls {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resultValue {
+  color: var(--color-primary);
+  font-size: 1.2em;
+}

@@ -1,0 +1,37 @@
+.diceContainer {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  perspective: 600px;
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+/* Animation for rolling */
+@keyframes rolling {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(720deg) rotateZ(360deg);
+  }
+}
+
+.rolling {
+  animation: rolling 1s;
+}
+
+@media (max-width: 480px) {
+  .dice {
+    width: 80px;
+    height: 80px;
+  }
+}

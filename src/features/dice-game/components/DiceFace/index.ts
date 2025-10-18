@@ -1,0 +1,1 @@
+export { DiceFace } from './DiceFace';
